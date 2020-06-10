@@ -15,7 +15,7 @@
 Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false|
-|groupname|string|null: false|
+|group_id|string|null: false|
 ### Association
 - has_many :groups_users
 - has_many :messages
