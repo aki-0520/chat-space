@@ -1,0 +1,19 @@
+.side-bar
+  .header
+    .header__box
+      %p.header__box__name
+        akid
+      %ul.header__box__menu
+        %li.header__box__menu__new-group
+        = link_to "#",class:"header__box__menu" do
+          = icon('fa', 'edit')
+        %li.header__box__menu__edit
+        = link_to "#",class:"header__box__menu" do
+          = icon('fa', 'cog')
+
+
+  .groups
+    %p.groups__name
+      グループ名
+    %p.groups__message
+      まだメッセージがありません
