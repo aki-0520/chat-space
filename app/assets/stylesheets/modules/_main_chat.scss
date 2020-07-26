@@ -1,0 +1,105 @@
+.content {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: left;
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 100px;
+    background-color: #ffffff;
+    &__left-box {
+      margin-top: 35px;
+      &__current-name {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 15px;
+      }
+      &__member-list {
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    &__edit-btn {
+      width: 72px;
+      height: 40px;
+      line-height: 40px;
+      border: solid 1px;
+      padding: 0 20px;
+      margin-top: 28px;
+      font-size: 16px;
+      color: #38aef0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .messages {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px;
+    .message {
+      padding-bottom: 46px;
+      .upper-message {
+        display: flex;
+        margin-bottom: 12px;
+        &__user-name {
+        color: #333333;
+        font-size: 16px;
+        line-height: 16px;
+        }
+        &__date {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      .lower-message {
+        &__content {
+          color: #434a54;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .form {
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+
+    &__message {
+      display: flex;
+      .input-box {
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        &__text {
+          height: 50px;
+          width: 100%;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        &__file {
+          display: none;
+        }
+      }
+
+    .submit-btn {
+      width: 100px;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      color: white;
+    }
+    }
+  }
+}

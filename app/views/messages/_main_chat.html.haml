@@ -1,0 +1,37 @@
+.content
+  .content-header
+    %h1.content-header__left-box
+      %p.content-header__left-box__current-name
+        チャット名
+      %p.content-header__left-box__member-list
+        Member：name
+    %p.content-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      .upper-message
+        .upper-message__user-name
+          メンバー
+        .upper-message__date
+          2020/7/15(Wed) 17:43:01
+      .lower-meesage
+        .lower-message__content
+          メッセージ
+    .message
+      .upper-message
+        .upper-message__user-name
+          メンバー
+        .upper-message__date
+          2020/7/15(Wed) 17:45:01
+      .lower-meesage
+        .lower-message__content
+          メッセージ
+  .form
+    %form.form__message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__file"}
+      %input{type: "submit",class: "submit-btn"}
