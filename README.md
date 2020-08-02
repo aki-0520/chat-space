@@ -14,7 +14,7 @@
 
 ## groupsテーブル
 Column|Type|Options|
-|------|----|-------|
+|-----|----|-------|
 |id|integer|null: false|
 |name|string|null: false|
 ### Association
