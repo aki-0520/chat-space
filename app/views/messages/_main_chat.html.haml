@@ -1,14 +1,13 @@
 .content
   .content-header
     .content-header__left-box
-      - current_user.groups.each do |group|
-        .content-header__left-box__current-name
-          = group.name
-        %ul.content-header__left-box__member-list
-          Member：
-          %li
-            - @group.users.each do |user|
-              = user.name
+      .content-header__left-box__current-name
+        = @group.name
+      %ul.content-header__left-box__member-list
+        Member：
+        %li
+          - @group.users.each do |user|
+            = user.name
 
     = link_to "Edit", edit_group_path(@group.id), class:"content-header__edit-btn"
 
